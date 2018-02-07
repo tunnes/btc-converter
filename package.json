@@ -34,5 +34,8 @@
     "eslint": "^4.17.0",
     "mocha": "^5.0.0",
     "nyc": "^11.4.1"
+  },
+  "dependencies": {
+    "commander": "^2.14.0"
   }
 }
