@@ -2,7 +2,7 @@
   "name": "cli-btc-converter",
   "version": "1.0.0",
   "description": "An command line to convert bitcoint to any currency provided",
-  "main": "index.js",
+  "main": "bin/main.js",
   "scripts": {
     "clear": "rimraf lib dist",
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir bin src",
@@ -11,6 +11,9 @@
     "test:specs:watch": "npm run test:specs -- --watch",
     "test:coverage": "nyc npm test"
   },
+  "files": [
+    "bin"
+  ],
   "prefereGlobal": "true",
   "bin": {
     "btc-converter": "bin/main.js"
