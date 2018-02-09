@@ -1,7 +1,7 @@
 ### Installing
 
 ```
-$ npm install -g btc-converter
+$ npm install -g cli-btc-converter
 ```
 
 ### How to use
