@@ -1,6 +1,6 @@
 {
   "name": "cli-btc-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An command line to convert bitcoint to any currency provided",
   "main": "bin/main.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "files": [
     "bin"
   ],
-  "prefereGlobal": "true",
+  "preferGlobal": true,
   "bin": {
     "btc-converter": "bin/main.js"
   },
