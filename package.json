@@ -7,7 +7,7 @@
     "clear": "rimraf lib dist",
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir bin src",
     "build:watch": "npm run build -- --watch",
-    "test:specs": "./node_modules/.bin/mocha specs/**/*.spec.js --require babel-register --reporter nyan",
+    "test:specs": "./node_modules/.bin/mocha specs/**/*.spec.js --require babel-register --require babel-polyfill --reporter nyan",
     "test:specs:watch": "npm run test:specs -- --watch",
     "test:coverage": "nyc npm test"
   },
@@ -29,6 +29,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "eslint": "^4.17.0",
@@ -42,6 +43,7 @@
     "chalk": "^2.3.0",
     "commander": "^2.14.0",
     "ora": "^1.4.0",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
   }
 }
